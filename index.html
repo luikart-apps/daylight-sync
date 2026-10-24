@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daylight Sync</title>
+<style>
+  :root { --bg:#fff8f0; --fg:#201a14; --muted:#6b5f55; --accent:#c46a14; --card:#f6eee5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#120f0c; --fg:#ece1d6; --muted:#a69c92; --accent:#ffb876; --card:#241e18; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:30px; margin:8px 0 4px; }
+  h2 { font-size:21px; margin:32px 0 8px; color:var(--accent); }
+  .tag { color:var(--muted); margin:0 0 20px; }
+  .card { background:var(--card); border-radius:12px; padding:16px 18px; margin:16px 0; }
+  a { color:var(--accent); }
+  ul { padding-left:22px; }
+  li { margin:6px 0; }
+  .small { color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Daylight Sync</h1>
+  <p class="tag">Natural sunrise-to-sunset light for LumenIZE lamps, from your location or your plant's or animal's native habitat.</p>
+
+  <div class="card">
+    <strong>Suggestions and problems</strong>
+    <ul>
+      <li>Open an issue on GitHub: <a href="https://github.com/luikart-apps/daylight-sync/issues">https://github.com/luikart-apps/daylight-sync/issues</a> — no app-store account needed.</li>
+      <li>Or e-mail: <a href="mailto:luikartapps@gmail.com">luikartapps@gmail.com</a></li>
+    </ul>
+    <p class="small">Replace https://github.com/luikart-apps/daylight-sync before publishing this page.</p>
+  </div>
+
+  <h2 id="privacy">Privacy policy</h2>
+  <p class="small">Last updated 23 October 2026</p>
+  <p>Daylight Sync writes a sunrise-to-sunset schedule into a Bluetooth lamp (Arcadia LumenIZE range) once a day. It is built to keep everything on your phone.</p>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li><strong>It has no internet access.</strong> The app does not request the Android internet permission, so it cannot send anything anywhere — not to us, not to anyone. There are no accounts, no analytics, no advertising and no crash reporting.</li>
+    <li><strong>It does not share data with third parties.</strong> There is nothing to share.</li>
+  </ul>
+
+  <h2>What the app stores on your phone</h2>
+  <ul>
+    <li><strong>Approximate location, to the nearest whole degree</strong> (roughly 60 miles / 100 km), used only to work out sunrise and sunset. Finer precision is never stored. On Android 12 and newer the app asks only for <em>approximate</em> location; on Android 11 and older, precise location permission is required by Android for Bluetooth scanning, but the value kept is still rounded to a whole degree. You can also type a location instead of using the phone's.</li>
+    <li><strong>A place you pick on the world map</strong> ("native habitat"), if you use that feature. This is a place you choose, not where you are.</li>
+    <li><strong>Your lamp's Bluetooth address and name</strong>, and the lamp password you enter, so the app can reconnect to the same lamp.</li>
+    <li><strong>Your schedule settings</strong> and the time of the last sync.</li>
+  </ul>
+  <p>All of this lives in the app's private storage and is deleted when you uninstall the app.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Bluetooth (nearby devices):</strong> to find the lamp and write its schedule.</li>
+    <li><strong>Approximate location:</strong> optional, only when you tap "Use phone location".</li>
+    <li><strong>Run after restart:</strong> to re-arm the once-a-day background sync after the phone reboots.</li>
+    <li><strong>Ignore battery optimisations:</strong> requested only if you switch on daily sync, because some phones otherwise stop the background sync after a few days.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children and collects no personal data from anyone.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:luikartapps@gmail.com">luikartapps@gmail.com</a></p>
+
+  <p class="small">Unofficial. Works with Arcadia LumenIZE lamps; not made or endorsed by Arcadia. "LumenIZE" and "Jungle Dawn" are their trademarks. World map imagery: NASA Visible Earth (public domain).</p>
+</main>
+</body>
+</html>
